@@ -48,9 +48,9 @@ func! CompileRunGcc()
     elseif &filetype == 'go'
         exec "!go build %"
         exec "!go run %"
-    elseif &filetype == 'exs'
+    elseif &filetype == 'elixir'
         exec "!elixir %"
-    elseif &filetype == 'js'
+    elseif &filetype == 'javascript'
         exec "!node %"
     elseif &filetype == 'php'
         exec "!php5 %"
