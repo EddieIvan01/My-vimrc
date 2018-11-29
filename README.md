@@ -1,5 +1,7 @@
 ## My vim编辑器配置
 
+![](https://github.com/EddieIvan01/My-vimrc/blob/master/demo.png)
+
 Windows系统
 
 语言：
