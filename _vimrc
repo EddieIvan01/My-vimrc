@@ -60,8 +60,6 @@ endfunc
 """""""""""""""""file tree  
 " NERDTree
 map <C-p> :NERDTreeToggle
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree
 " o fold/expand
 " C set pwd to root
 " u ../
