@@ -1,5 +1,7 @@
 ## My vim编辑器配置
 
+Windows系统
+
 语言：
 
 + Python
