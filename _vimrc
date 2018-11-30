@@ -30,7 +30,7 @@ set softtabstop=4
 set shiftwidth=4 
 set backspace=2
 set hls
-set cursorline
+"set cursorline
 set encoding=utf-8
 syntax on
 filetype plugin on
