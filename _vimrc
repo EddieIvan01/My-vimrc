@@ -17,6 +17,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'vim-airline/vim-airline'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 """"""""""""""""""""""""""""""""
 
 filetype plugin indent on
@@ -29,8 +30,9 @@ set softtabstop=4
 set shiftwidth=4 
 set backspace=2
 set hls
-:set encoding=utf-8
-:syntax on
+set cursorline
+set encoding=utf-8
+syntax on
 filetype plugin on
 
 """"""""""""""""""""""
@@ -50,7 +52,7 @@ func! CompileRunGcc()
         exec "!go run %"
     elseif &filetype == 'elixir'
         exec "!elixir %"
-    elseif &filetype == 'javascript'
+    elseif &filetype == 'js'
         exec "!node %"
     elseif &filetype == 'php'
         exec "!php5 %"
@@ -60,9 +62,8 @@ endfunc
 """""""""""""""""file tree  
 " NERDTree
 map <C-p> :NERDTreeToggle
-" o fold/expand
-" C set pwd to root
-" u ../
+let g:nerdtree_tabs_open_on_console_startup=1 
+
 """""""""""""""""
 
 
